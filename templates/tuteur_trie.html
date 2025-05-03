@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="album py-5 bg-light">
+        <h2 class="title_page">Tuteurs {{ etablissement }}</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">Date de naissance</th>
+                <th scope="col">Nationalité</th>
+                <th scope="col">Heures prestées</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for tuteur in liste_tuteur_trie %}
+                <tr>
+                    <th scope="row">{{ tuteur.id_tuteur }}</th>
+                    <td>{{ tuteur.prenom }}</td>
+                    <td>{{ tuteur.nom }}</td>
+                    <td>{{ tuteur.telephone }}</td>
+                    <td>{{ tuteur.date_naissance }}</td>
+                    <td>{{ tuteur.pays }}</td>
+                    <td>{{ tuteur.nb_heures_prestees }} heures</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    </div>
+    </div>
+
+{% endblock content %}

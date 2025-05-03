@@ -1,0 +1,25 @@
+h2 {
+    color:#009900;
+    margin-bottom: 30px;
+}
+
+.title_page {
+    text-align: center;
+}
+
+.presentation {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: purple;
+}
+
+.accueil_p_color {
+    color: #d941d9;
+    font-weight: bold;
+}
+
+.accueil_image {
+    text-align: center;
+}

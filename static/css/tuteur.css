@@ -1,0 +1,26 @@
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    gap: 2px;
+}
+
+.stat {
+    flex: 1;
+    color: black;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.stat-prestees {
+    background-color: rgba(40, 167, 69, 0.35);
+}
+
+.stat-annulation {
+    background-color: rgba(220, 53, 69, 0.35);
+}
+
+.stat-absence {
+    background-color: rgba(255, 193, 7, 0.35);
+}
