@@ -12,6 +12,8 @@
                 <th scope="col">Date de naissance</th>
                 <th scope="col">Nationalité</th>
                 <th scope="col">Heures prestées</th>
+                <th scope="col">Annulations</th>
+                <th scope="col">Absences</th>
             </tr>
             </thead>
             <tbody>
@@ -24,13 +26,12 @@
                     <td>{{ tuteur.date_naissance }}</td>
                     <td>{{ tuteur.pays }}</td>
                     <td>{{ tuteur.nb_heures_prestees }} heures</td>
+                    <td>{{ tuteur.nb_annulation }}</td>
+                    <td>{{ tuteur.nb_absence }}</td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
 
     </div>
-    </div>
-    </div>
-
 {% endblock content %}
