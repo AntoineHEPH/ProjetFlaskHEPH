@@ -3,5 +3,10 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] ='postgresql://anonyme:anonyme@localhost/archimaide'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY']='30b34c8f940bc81d6c6d162064acca81'
 
 db = SQLAlchemy(app)
+
+
+
+from . import routes
